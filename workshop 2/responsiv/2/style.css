@@ -1,0 +1,61 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-img {
+  object-fit: cover;
+  height: 180px;
+}
+
+.card .card-content {
+  color: white;
+  background-color: rgb(40, 155, 159);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-content h2 {
+  margin: 8px 0;
+}
+
+.card .card-content .card-footer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.card .card-content .card-footer p {
+  margin: 0;
+  max-width: 32px;
+}
+
+.card .card-content .card-footer p span {
+  font-size: 24px;
+}
+
+.card .card-content .card-footer a {
+  background-color: rgb(73, 222, 219);
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card .card-img {
+    object-fit: cover;
+    height: auto;
+    width: 200px;
+  }
+}

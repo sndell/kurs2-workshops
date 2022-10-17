@@ -12,38 +12,32 @@ footer {
 }
 
 .container header {
-  grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column: 1 / -1;
   background-color: purple;
 }
 
 .container main {
   padding: 40px;
-  grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column: 2 / 6;
   background-color: orange;
 }
 
 .container aside {
-  grid-column-start: 6;
-  grid-column-end: 8;
+  grid-column: 6 / 8;
   background-color: red;
 }
 
 .container .first-section {
-  grid-column-start: 2;
-  grid-column-end: 5;
+  grid-column: 2 / 5;
   background-color: beige;
 }
 
 .container .second-section {
-  grid-column-start: 5;
-  grid-column-end: 8;
+  grid-column: 5 / 8;
   background-color: magenta;
 }
 
 .container footer {
-  grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column: 1 / -1;
   background-color: blue;
 }

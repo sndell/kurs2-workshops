@@ -371,3 +371,6 @@ body {
     padding: 48px 32px;
   }
 }
+
+@media only screen and (max-width: 872px) {
+}

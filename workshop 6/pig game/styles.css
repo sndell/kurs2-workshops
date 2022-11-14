@@ -155,6 +155,7 @@ main {
 }
 
 .side {
+  width: 200px;
   padding: 16px 24px;
   padding-bottom: 8px;
   align-items: center;
@@ -163,20 +164,29 @@ main {
 }
 
 .side__text {
-  font-size: 48px;
+  font-size: 40px;
   padding: 8px 0;
   font-weight: 200;
 }
 
 .side__additional {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
+  opacity: 0;
 }
 
 .side__score {
   color: #eb4d4d;
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 300;
+}
+
+.active .side__text {
+  font-weight: 300;
+}
+
+.active .side__additional {
+  opacity: 100%;
 }
 
 .middle {
@@ -200,6 +210,25 @@ main {
 }
 
 .middle__img {
-  width: 120px;
+  width: 80px;
   border-radius: 8px;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.middle__label {
+  font-weight: 300;
+}
+
+.middle__input {
+  border: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 4px 6px;
+  outline: none;
 }
